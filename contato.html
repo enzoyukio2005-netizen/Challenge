@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — Turma do Bem</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <img src="imagens/logo-turma-do-bem.png" alt="Logo Turma do Bem" class="logo">
+    <h1>Contato</h1>
+  </header>
+
+  <nav class="top-nav" role="navigation" aria-label="Menu principal">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contato.html" aria-current="page">Contato</a>
+    <a href="integrantes.html">Integrantes</a>
+  </nav>
+
+  <main class="site-main container" role="main">
+    <article class="card" aria-labelledby="contact-title">
+      <h2 id="contact-title">Fale Conosco</h2>
+
+      <form class="form card" action="#" method="post" aria-label="Formulário de contato">
+        <label for="contact-name">Nome</label>
+        <input id="contact-name" type="text" name="nome" required>
+
+        <label for="contact-email">E-mail</label>
+        <input id="contact-email" type="email" name="email" required>
+
+        <label for="contact-msg">Mensagem</label>
+        <textarea id="contact-msg" name="mensagem" required></textarea>
+
+        <div class="form-message" aria-live="polite"></div>
+        <button type="submit" class="btn">Enviar mensagem</button>
+      </form>
+
+      <section class="card" aria-labelledby="info-title">
+        <h3 id="info-title">Informações da ONG</h3>
+        <p><strong>ONG Turma do Bem</strong></p>
+        <p>Email: contato@turmadobem.org.br</p>
+        <p>Endereço: Rua da turma do bem, 123 - São Paulo, SP</p>
+        <p>Telefone: (11) 1111-1111</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© 2025 ONG Turma do Bem — Projeto acadêmico</p>
+  </footer>
+
+  <nav class="bottom-nav" aria-label="Navegação inferior">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contato.html">Contato</a>
+    <a href="integrantes.html">Integrantes</a>
+  </nav>
+</body>
+</html>
