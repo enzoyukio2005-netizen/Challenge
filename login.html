@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Integrantes — Turma do Bem</title>
+  <title>Login — Turma do Bem</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header" role="banner">
     <img src="imagens/logo-turma-do-bem.png" alt="Logo Turma do Bem" class="logo">
-    <h1>Quem Somos</h1>
+    <h1>Acesso do Voluntário</h1>
   </header>
 
   <nav class="top-nav" role="navigation" aria-label="Menu principal">
@@ -17,27 +17,23 @@
     <a href="sobre.html">Sobre</a>
     <a href="faq.html">FAQ</a>
     <a href="contato.html">Contato</a>
-    <a href="integrantes.html" aria-current="page">Integrantes</a>
+    <a href="integrantes.html">Integrantes</a>
   </nav>
 
   <main class="site-main container" role="main">
-    <article class="card" aria-labelledby="team-title">
-      <h2 id="team-title">Nossa equipe</h2>
+    <article class="card" aria-labelledby="login-title">
+      <h2 id="login-title">Entrar ou Criar Conta</h2>
 
-      <section class="integrante" aria-labelledby="enzo">
-        <img src="imagens/fotoenzo.jpg" alt="Foto de Enzo Yukio Oyadomari">
-        <h3 id="enzo">Enzo Yukio Oyadomari</h3>
-        <p>RM: 561032</p>
-        <p>Turma: TDSPR</p>
-      </section>
+      <form id="login-form" class="form card" aria-label="Formulário de login">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" required>
 
-      <section class="integrante" aria-labelledby="joao">
-        <img src="imagens/fotojoao.jpg" alt="Fot">
-        <h3 id="joao">João Victor de Souza Braz</h3>
-        <p>RM: 566862</p>
-        <p>Turma: TDSPR</p>
-      </section>
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" required>
 
+        <button type="submit" class="btn">Acessar</button>
+        <p id="login-message" class="form-message" aria-live="polite"></p>
+      </form>
     </article>
   </main>
 
@@ -52,5 +48,7 @@
     <a href="contato.html">Contato</a>
     <a href="integrantes.html">Integrantes</a>
   </nav>
+
+  <script src="script.js"></script>
 </body>
 </html>
